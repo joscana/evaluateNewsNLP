@@ -1,7 +1,10 @@
+$primary-color: #ad1457;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $primary-color;
 }
 
 main {
