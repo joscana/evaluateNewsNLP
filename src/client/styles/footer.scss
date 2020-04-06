@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+}
+
+
+.footerLink {
+    display: block;
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

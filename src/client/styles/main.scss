@@ -1,1 +1,11 @@
-$font-stack: Helvetica, sans-serif;
+$font-family: 'Gotu', sans-serif;
+
+body {
+    font-family: $font-family
+}
+
+.formResults {
+    border: 5px solid #FFF0F5;
+    border-radius: 25px;
+    padding: 10px;
+}
