@@ -1,17 +1,6 @@
-//Test Function Jest Tutorial
-//In a real project, define the function in another file and import it from the test file.
-
+const filterByTerm = require("../src/client/js/filterByTerm");
 
 //For each element of the input array, we check the "url" property, matching it against a regular expression with the match method.
-
-function filterByTerm(inputArr, searchTerm) {
-    const regex = new RegExp(searchTerm, "i");
-    return inputArr.filter(function(arrayElement) {
-      return arrayElement.url.match(regex);
-    });
-  }
-
-
 describe("Filter function", () => {
     test("it should filter by a search term (link)", () => {
       const input = [
