@@ -25,8 +25,9 @@ app.listen(3000, function () {
 
 app.get('/aylien', function (req, res) {
     console.log("::: getAylien :::")
+    let text = req.query.text;
     textapi.sentiment({
-        'text': 'John is a very good football player!'
+        'text': text
     }, function(error, response) {
         if (error === null) {
             console.log(response);
