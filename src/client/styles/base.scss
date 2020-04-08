@@ -1,10 +1,9 @@
-$primary-color: #ad1457;
-
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: $primary-color;
+    background: rgb(227,81,131);
+    background: linear-gradient(90deg, rgba(227,81,131,1) 0%, rgba(173,20,87,1) 35%, rgba(244,143,177,1) 100%);
 }
 
 main {

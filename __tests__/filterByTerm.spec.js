@@ -1,5 +1,5 @@
 const filterByTerm = require("../src/client/js/filterByTerm");
-
+const requestData = require("../src/client/js/requestData")
 //For each element of the input array, we check the "url" property, matching it against a regular expression with the match method.
 describe("Filter function", () => {
     test("it should filter by a search term (link)", () => {

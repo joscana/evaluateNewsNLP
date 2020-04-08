@@ -1,12 +1,14 @@
 form {
-    border: 5px solid #FFF0F5;
+    border: 2px solid #FFF0F5;
     border-radius: 25px;
     padding: 50px;
+    input {
+        padding: 10px 20px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+    }
 }
 
-input {
-    padding: 10px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
-}
+
+

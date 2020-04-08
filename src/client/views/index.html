@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Kalam:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Test</title>
 </head>
 
@@ -11,14 +12,14 @@
 
     <header>
         <div class="header">
-            <h1>Evaluate News Articles</h1>
+            <h1>Evaluate News</h1>
         </div>
     </header>
 
     <main>
         <section>
             <form class="form" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                <input id="name" type="text" name="input" id="submit" value="" onblur="onBlur()" placeholder="Place tweet here to evaluate!">
                 <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
                     onsubmit="return Client.handleSubmit(event)">
             </form>
@@ -26,7 +27,7 @@
 
                 <section>
                     <div class="formResults">
-                        <strong>Form Results:</strong>
+                        <strong>Results:</strong>
                         <div id="results"></div>
                     </div>
                 </section>
