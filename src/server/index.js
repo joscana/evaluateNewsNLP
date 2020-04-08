@@ -7,7 +7,6 @@ const textapi = new AYLIENTextAPI({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
 });
-const apidata = {}
 
 const app = express()
 
@@ -16,7 +15,6 @@ app.use(express.static('dist'))
 console.log(__dirname)
 
 app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html')
     res.sendFile(path.resolve('src/client/views/index.html'))
 })
 
@@ -27,7 +25,6 @@ app.listen(3000, function () {
 
 app.get('/aylien', function (req, res) {
     console.log("::: getAylien :::")
-
     textapi.sentiment({
         'text': 'John is a very good football player!'
     }, function(error, response) {
