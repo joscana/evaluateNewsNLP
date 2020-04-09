@@ -1,10 +1,17 @@
+import { validateInput } from "./validateInput"
+
 function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
     let formText = document.getElementById('user_input').value
-    //Client.evaluateInput(formText)
+    const isURL = validateInput(formText)
+    if(!isURL) {
+        alert("Not a valid URL")
+        return
+    }
 
+    
     const url = `http://localhost:3000/aylien?text=${formText}`
     console.log(url)
 
@@ -12,7 +19,8 @@ function handleSubmit(event) {
     fetch(url)
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('results').innerHTML = res.polarity;
+        const results = `Polarity: ${res.polarity} \n Subjectivity: ${res.subjectivity}`
+        document.getElementById('results').innerHTML = results;
     })
 }
 
