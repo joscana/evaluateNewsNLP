@@ -5,7 +5,7 @@ function handleSubmit(event) {
     let formText = document.getElementById('user_input').value
     //Client.evaluateInput(formText)
 
-    const url = `http://localhost:3000/aylien?text="${formText}"`
+    const url = `http://localhost:3000/aylien?text=${formText}`
     console.log(url)
 
     console.log("::: AYLIEN Form Submitted :::")

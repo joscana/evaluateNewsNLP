@@ -27,11 +27,13 @@ app.get('/aylien', function (req, res) {
     console.log("::: getAylien :::")
     let text = req.query.text;
     textapi.sentiment({
-        'text': text
+        'url': text
     }, function(error, response) {
         if (error === null) {
             console.log(response);
             res.send(response)
+        } else {
+            console.log(error)
         }
     });
 })
