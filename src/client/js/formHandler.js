@@ -19,7 +19,8 @@ function handleSubmit(event) {
     fetch(url)
     .then(res => res.json())
     .then(function(res) {
-        const results = `Polarity: ${res.polarity} \n Subjectivity: ${res.subjectivity}`
+        const results = `Polarity: ${res.polarity}
+         Subjectivity: ${res.subjectivity}`
         document.getElementById('results').innerHTML = results;
     })
 }
